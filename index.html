@@ -11,16 +11,20 @@
         <p class="descritpion">La description de l'image</p>
 
     </div>
-    <div class="image">
-        <img src="http://lorempixel.com/400/200/" alt="Mon image"/>
-        <p class="descritpion">La description de l'image</p>
+    <form action="/ma-page-de-traitement" method="post">
+        <div>
+            <label for="name">Nom du  prof :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="mail">cours de :</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
 
-    </div>
-    <div class="image">
-        <img src="http://lorempixel.com/400/200/" alt="Mon image"/>
-        <p class="descritpion">La description de l'image</p>
-
-    </div>
+        <div class="button">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
     <p>test</p>
     <script type = "text/javascript" src = "js/script.js" ></script>
 </body>
