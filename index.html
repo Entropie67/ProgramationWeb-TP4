@@ -18,14 +18,23 @@
         </div>
         <div>
             <label for="mail">cours de :</label>
-            <input type="email" id="mail" name="user_mail">
+            <select id="cours">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Web</option>
+                <option value="cat">Algorithmique</option>
+                <option value="hamster">Python</option>
+                <option value="parrot">SQL</option>
+                <option value="spider">C</option>
+                <option value="goldfish">C++</option>
+            </select>
+
         </div>
 
         <div class="button">
-            <button type="submit">Envoyer</button>
+            <button type="button">Envoyer</button>
         </div>
     </form>
-    <p>test</p>
+    <p class="affichage"></p>
     <script type = "text/javascript" src = "js/script.js" ></script>
 </body>
 </html>

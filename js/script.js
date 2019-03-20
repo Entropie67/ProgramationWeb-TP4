@@ -7,6 +7,13 @@ image.addEventListener("mouseover",function(){
 image.addEventListener("mouseout",function(){
     description.style.display = "none";
 });
+function valide() {
+    alert("validatoin, ok !");
+
+}
+var validation = document.querySelector(".button");
+var affichage = document.querySelector(".affichage");
+validation.addEventListener("click",valide);
 // Partie 2 :
 function afficheVoiture() {
     var résultat = "Une " + this.fabricant + " " + this.modèle
