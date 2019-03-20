@@ -7,12 +7,7 @@ image.addEventListener("mouseover",function(){
 image.addEventListener("mouseout",function(){
     description.style.display = "none";
 });
-function valide() {
-    alert("validatoin, ok !");
-}
-var validation = document.querySelector(".button");
-var affichage = document.querySelector(".affichage");
-validation.addEventListener("click",valide);
+
 // Partie 2 :
 function afficheCours() {
     var résultat = "Avec " + this.prof + " cours de " + this.cours
@@ -27,3 +22,12 @@ function Cours(prof, cours) {
 }
 var mesCours = new Cours("Elophe", "Web");
 mesCours.afficheCours();
+var validation = document.querySelector(".button");
+var affichage = document.querySelector(".affichage");
+validation.addEventListener("click",valide);
+function valide() {
+    let prof = document.getElementById("prof").value;
+    let cours = document.getElementById("cours").value;
+    affichage.innerHTML += prof + " en cours de " + cours +"<br />";
+    alert(prof);
+}
